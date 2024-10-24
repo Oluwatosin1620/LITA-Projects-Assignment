@@ -16,9 +16,9 @@ This dataset contain various details of products sold in a store at different ge
 ### Key Features:
 OrderID: A unique identifier for each customer's order
 CustomerID: Each customer unique id
-Product:
+Product: The name of the product ordered
 Region: The region the order was placed
-OrderDate:
-Quantity:
-UnitPrice:
-Revenue:
+OrderDate: The date the product was ordered
+Quantity: The quantity of the product ordered
+UnitPrice: The unit price for each products
+Revenue: The revenue derived on the product sold
