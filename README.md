@@ -11,4 +11,8 @@ This dataset was provided by our facilitator
 ### Dataset Description
 This data contains 9922 rows and 7 columns while a missing key column was added in the processing of cleaming, which makes it a total of 8 columns.
 
-ID: A unique identifier for each observation.
+
+
+### Key Features:
+OrderID: A unique identifier for each customer's order
+CustomerID- Each customer unique id
