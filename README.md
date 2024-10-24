@@ -9,7 +9,7 @@ This is an analysis and visualization of sales data using Excel, SQL, and Power 
 This dataset was provided by our facilitator
 
 ### Dataset Description
-This data contains 9922 rows and 7 columns while a missing key column was added in the processing of cleaming, which makes it a total of 8 columns.
+This dataset contain various details of products sold in a store at different geographical area. These type of datasets are studied to find out the patterns in the selling structure and profit earned from them. This data contains 9922 rows and 7 columns while a missing key column was added in the processing of cleaming, which makes it a total of 8 columns.
 
 
 
