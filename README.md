@@ -72,5 +72,10 @@ Based on this analysis, the South Region has the highest sales followed by the E
 3. **What month in each year had the highest sales**;
 
 ![Total Sales by Month](https://github.com/user-attachments/assets/dc651dfe-c073-44af-ab93-6170d3a965b8)
+
+4. **What are the average sales of products sold**;
+   
+![Average Sales by Product](https://github.com/user-attachments/assets/8de4825c-6816-484f-b2b4-a5a1645913c4)
+
    
   
