@@ -28,5 +28,14 @@ This dataset contains various details of products sold in a store in a different
   > Data cleaning;
   > Data Analysis and Summarization.
 * SQL [Structured Query Language] for Querying data
-* Power Bi for Data Visualization
+* Power BI for Data Visualization
 * GitHub for Portfolio building
+
+
+### Microsoft Excel
+Microsoft Excel is a spreadsheet tool for data organization (cleaning and preparation), analysis, and visualization. It offers features like formulas, pivot tables, and charts, which enable users to manage and interpret data.
+
+**Data Cleaning and Preparation**: Processing the raw data to ensure it is ready for analysis. Steps taken:
+> Removing Duplicates: The initial rows of the data were 50001, but after removing duplicates, 9921 rows were left. No missing values were found. 
+> Adding filters
+> Adding conditionl formatting
