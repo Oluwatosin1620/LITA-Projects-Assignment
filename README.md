@@ -55,5 +55,13 @@ The following insights will be drawn:
 * What is the average sales for each product? And many more...
 
 
+  ### Data Visualization
+  **Pivot Table** a data summarization tool found in MS Excel was used for visualization.
+  
+      **Region with the highest Sales**:
+![Total sales by region](https://github.com/user-attachments/assets/eed3f44e-2096-4dc9-8638-6afb678826e4)
+
+
+
 
 
