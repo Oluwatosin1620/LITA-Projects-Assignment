@@ -51,5 +51,9 @@ The following insights will be drawn:
 * What is the total revenue of products sold in each region?
 * Which region is best for business?
 * Which product should the business focus more on?
+* What is the total revenue derived from each product?
+* What is the average sales for each product? And many more...
+
+
 
 
