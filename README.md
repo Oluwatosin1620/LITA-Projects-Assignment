@@ -32,7 +32,7 @@ This dataset contains various details of products sold in a store in a different
 * GitHub for Portfolio building
 
 
-### Microsoft Excel
+### Microsoft Excel [VIEW PROJECT](https://us.docworkspace.com/d/sIJyeupNZi_f6uAY)
 Microsoft Excel is a spreadsheet tool for data organization (cleaning and preparation), analysis, and visualization. It offers features like formulas, pivot tables, and charts, which enable users to manage and interpret data.
 
 **Data Cleaning and Preparation**: Processing the raw data to ensure it is ready for analysis. Steps taken:
