@@ -45,7 +45,7 @@ Microsoft Excel is a spreadsheet tool for data organization (cleaning and prepar
 The following insights will be drawn:
 * Which region has the highest sales?
 * What product was sold the most?
-* What month did they have the highest sales?
+* What month had the highest sales each year?
 * What quantity of product was sold in each month of the year?
 * What is the total number of products sold in the year?
 * What is the total revenue of products sold in each region?
@@ -69,7 +69,7 @@ Based on this analysis, the South Region has the highest sales followed by the E
 
 ![Total Sales by Product](https://github.com/user-attachments/assets/c3d7def7-d6cb-442f-9b9f-6bed8c281312)
 
-3. **What month in each year had the highest sales**;
+3. **What month had the highest sales each year**;
 
 ![Total Sales by Month](https://github.com/user-attachments/assets/dc651dfe-c073-44af-ab93-6170d3a965b8)
 
@@ -77,5 +77,14 @@ Based on this analysis, the South Region has the highest sales followed by the E
    
 ![Average Sales by Product](https://github.com/user-attachments/assets/8de4825c-6816-484f-b2b4-a5a1645913c4)
 
-   
+5. **What is the total revenue of products sold in each region**?    
   
+![Total Revenue by Region](https://github.com/user-attachments/assets/715259c0-4a91-4015-9ea2-5bdc5e827e79)
+
+
+
+
+![Total Product by Month and Region](https://github.com/user-attachments/assets/aaa55f49-39b6-4f95-bc80-ec2a4d9ae108)
+
+
+
