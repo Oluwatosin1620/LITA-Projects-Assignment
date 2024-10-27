@@ -3,22 +3,30 @@
 ### Project Title: Sales Data
 
 ### Project Overview
-This is an analysis and visualization of sales data using Excel, SQL, and Power BI, to uncover trends for strategic decision-making. This project, part of my GitHub portfolio, showcases my proficiency in data storytelling and highlights my ability to confidently transform raw data into actionable insights with advanced tools.
+This is an analysis and visualization of sales data using Excel, SQL, and Power BI, to uncover trends for strategic decision-making. This project, part of my GitHub portfolio, showcases my proficiency in data storytelling and highlights my ability to transform raw data into actionable insights with advanced tools confidently.
 
 ### Data Source
-This dataset was provided by our facilitator
+Our facilitator provided this dataset
 
 ### Dataset Description
-This dataset contain various details of products sold in a store at different geographical area. These type of datasets are studied to find out the patterns in the selling structure and profit earned from them and the order history. This data contains 9922 rows and 7 columns while a missing key column was added in the processing of cleaning, which makes it a total of 8 columns.
-
+This dataset contains various details of products sold in a store in a different geographical area. These types of datasets are studied to find out the patterns in the selling structure, profit earned from them, and order history. This data contains 9921 rows and 7 columns, while a missing key column was added in the cleaning process, making it a total of 8 columns.
 
 
 ### Key Features:
-OrderID: A unique identifier for each customer's order
-CustomerID: Each customer unique id
-Product: The name of the product ordered
-Region: The region the order was placed
-OrderDate: The date the product was ordered
-Quantity: The quantity of the product ordered
-UnitPrice: The unit price for each products
-Revenue: The revenue derived on the product sold
+**OrderID**: A unique identifier for each customer's order
+**CustomerID**: Each customer's unique ID
+**Product**: The name of the product ordered
+**Region**: The region in which the order was placed
+**OrderDate**: The date the product was ordered
+**Quantity**: The quantity of the product ordered
+**UnitPrice**: The unit price for each product
+**Revenue**: The revenue derived from the product sold
+
+
+### Data Tools
+* Microsoft Excel, for:
+  > Data cleaning;
+  > Data Analysis and Summarization.
+* SQL [Structured Query Language] for Querying data
+* Power Bi for Data Visualization
+* GitHub for Portfolio building
