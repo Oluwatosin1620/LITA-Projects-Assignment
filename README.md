@@ -62,27 +62,35 @@ The following insights will be drawn:
 
 ![Total Sales by Region](https://github.com/user-attachments/assets/e21be676-1260-43d9-8733-0bd46bafbff7)
 
-**key finding**;
+**key Finding**
 Based on this analysis, the South Region has the highest sales followed by the East Region, while the West Region has the lowest sales. Though the business is doing well in all regions, the business should put more focus on the South Region which has a huge sales difference from others.
 
 2. **Product that was sold the most**;
 
 ![Total Sales by Product](https://github.com/user-attachments/assets/c3d7def7-d6cb-442f-9b9f-6bed8c281312)
 
+**Key Finding**
+This analysis shows that shoes were the the most sold product with a total of 613,380 followed by shirts which had a total of 485,600 and socks coming as the least with totals of 180,785. 
+
 3. **What month had the highest sales each year**;
 
 ![Total Sales by Month](https://github.com/user-attachments/assets/dc651dfe-c073-44af-ab93-6170d3a965b8)
+
+**Key Finding**
+It shows that in 2023 and 2024, February had the highest sales. July was the second-highest sales in 2023, but in 2024, Jul declined in sales, and Jan had the second-highest total sales.
 
 4. **What are the average sales of products sold**;
    
 ![Average Sales by Product](https://github.com/user-attachments/assets/8de4825c-6816-484f-b2b4-a5a1645913c4)
 
+**Key Finding**
+
+
 5. **What is the total revenue of products sold in each region**?    
   
 ![Total Revenue by Region](https://github.com/user-attachments/assets/715259c0-4a91-4015-9ea2-5bdc5e827e79)
 
-
-
+6. **What is the total No of products sold in a month at each region**;
 
 ![Total Product by Month and Region](https://github.com/user-attachments/assets/aaa55f49-39b6-4f95-bc80-ec2a4d9ae108)
 
