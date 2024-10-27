@@ -83,9 +83,6 @@ It shows that in 2023 and 2024, February had the highest sales. July was the sec
    
 ![Average Sales by Product](https://github.com/user-attachments/assets/8de4825c-6816-484f-b2b4-a5a1645913c4)
 
-**Key Finding**
-
-
 5. **What is the total revenue of products sold in each region**?    
   
 ![Total Revenue by Region](https://github.com/user-attachments/assets/715259c0-4a91-4015-9ea2-5bdc5e827e79)
@@ -94,5 +91,15 @@ It shows that in 2023 and 2024, February had the highest sales. July was the sec
 
 ![Total Product by Month and Region](https://github.com/user-attachments/assets/aaa55f49-39b6-4f95-bc80-ec2a4d9ae108)
 
+**Key Findings**
+In this analysis, lots of insights were generated. It answers the questions:
+
+  * What is the total No of products sold in 2023? **5,952**
+  * How many product types were sold in each month? **1**
+  * How many products were sold in Jan? **496**
+  * What is the total No of products sold in 2024? **3,969**
+    
+In Summary, the business focuses on a particular type of product and a particular region each month. There was only a change in the product type in August when the business initially sold shoes in 2023 but later changed to selling Hats in 2024.  
+  
 
 
