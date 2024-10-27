@@ -57,11 +57,17 @@ The following insights will be drawn:
 
   ### Data Visualization
   **Pivot Table** a data summarization tool found in MS Excel was used for visualization.
-  
-  **Region with the highest Sales**:TOTAL SALES BY REGION	
+
+1. **Region with the highest Sales**:	
 
 ![Total Sales by Region](https://github.com/user-attachments/assets/e21be676-1260-43d9-8733-0bd46bafbff7)
 
+**key finding**;
+Based on this analysis, the South Region has the highest sales followed by the East Region, while the West Region has the lowest sales. Though the business is doing well in all regions, the business should put more focus on the South Region which has a huge sales difference from others.
+
+2. **Product that was sold the most**;
+
+![Total Sales by Product](https://github.com/user-attachments/assets/c3d7def7-d6cb-442f-9b9f-6bed8c281312)
 
   
   
