@@ -58,10 +58,13 @@ The following insights will be drawn:
   ### Data Visualization
   **Pivot Table** a data summarization tool found in MS Excel was used for visualization.
   
-      **Region with the highest Sales**:
-![Total sales by region](https://github.com/user-attachments/assets/eed3f44e-2096-4dc9-8638-6afb678826e4)
+  **Region with the highest Sales**:TOTAL SALES BY REGION	
+
+![Total Sales by Region](https://github.com/user-attachments/assets/e21be676-1260-43d9-8733-0bd46bafbff7)
 
 
+  
+  
 
 
 
