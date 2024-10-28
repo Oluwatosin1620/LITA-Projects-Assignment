@@ -34,6 +34,7 @@ This dataset contains various details of products sold in a store in a different
 
 
 ## Microsoft Excel [VIEW PROJECT](https://us.docworkspace.com/d/sIJyeupNZi_f6uAY)
+---
 Microsoft Excel is a spreadsheet tool for data organization (cleaning and preparation), analysis, and visualization. It offers formulas, pivot tables, and charts, enabling users to manage and interpret data.
 
 **Data Cleaning and Preparation**: Processing the raw data to ensure it is ready for analysis. Steps taken:
@@ -104,6 +105,7 @@ In Summary, the business focuses on a particular type of product and a specific 
   
 
 ## SQL (STANDARD QUERY LANGUAGE)
+---
 It is used for querying, storing and managing data in a database. The following queries: were derived in the analysis:
 
 1. Total sales for each Product Category:
@@ -179,3 +181,9 @@ WHERE Product NOT IN (
         WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE())
     );
 ~~~
+
+
+## POWER BI
+A data Visualization and business intelligence tool for converting data from different sources to interactive dashboards.
+
+
