@@ -114,10 +114,68 @@ FROM [dbo].[LITA Capstone Dataset]
 GROUP BY Product;
 ~~~
 
-2. Find the number of sales transactions in each region.....
+2. Find the number of sales transactions in each region:
 
 ~~~ SQL
 SELECT Region, count(quantity * UnitPrice) AS SalesCount
 from [dbo].[LITA Capstone Dataset]
 group by region
+~~~
+
+3. Find the highest-selling product by total sales value:
+   
+~~~ SQL
+SELECT Product, SUM(Quantity * UnitPrice) AS TotalSales
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY Product
+order by 2 desc
+~~~
+
+4. Calculate total revenue per product:
+
+~~~ SQL
+SELECT Product, SUM(Quantity * UnitPrice) AS TotalRevenue
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY Product
+~~~
+
+5. calculate monthly sales totals for the current year:
+
+~~~ SQL
+SELECT 
+    MONTH(OrderDate) AS Month, SUM(Quantity * UnitPrice) AS MonthlySales
+FROM [dbo].[LITA Capstone Dataset]
+WHERE YEAR(OrderDate) = YEAR(GETDATE())
+GROUP BY  MONTH(OrderDate)
+ORDER BY Month;
+~~~
+
+6. Find the top 5 customers by total purchase amount:
+
+~~~ SQL
+SELECT Top 5 Customer_Id, SUM(Quantity * UnitPrice) AS TotalPurchase
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY Customer_Id
+ORDER BY TotalPurchase DESC
+~~~
+
+7. Calculate the percentage of total sales contributed by each region:
+
+~~~ SQL
+SELECT Region, sum(Quantity * UnitPrice) as TotalSales,
+(SUM(Quantity * UnitPrice) * 100.00 / (SELECT SUM(Quantity * UnitPrice) 
+from [dbo].[LITA Capstone Dataset] as PercentageOfTotalSales
+WHERE  PercentageOfTotalSales
+~~~
+
+8. Identify products with no sales in the last quarter:
+
+~~~ SQL
+SELECT Product
+FROM [dbo].[LITA Capstone Dataset]
+WHERE Product NOT IN (
+        SELECT DISTINCT Product
+        FROM [dbo].[LITA Capstone Dataset]
+        WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE())
+    );
 ~~~
