@@ -11,6 +11,7 @@ Our facilitator provided this dataset
 ### Dataset Description
 This dataset contains various details of products sold in a store in a different geographical area. These types of datasets are studied to find out the patterns in the selling structure, profit earned from them, and order history. This data contains 9921 rows and 7 columns, while a missing key column was added in the cleaning process, making it a total of 8 columns.
 
+---
 
 ### Key Features:
 **OrderID**: A unique identifier for each customer's order
@@ -32,8 +33,8 @@ This dataset contains various details of products sold in a store in a different
 * GitHub for Portfolio building
 
 
-### Microsoft Excel [VIEW PROJECT](https://us.docworkspace.com/d/sIJyeupNZi_f6uAY)
-Microsoft Excel is a spreadsheet tool for data organization (cleaning and preparation), analysis, and visualization. It offers features like formulas, pivot tables, and charts, which enable users to manage and interpret data.
+## Microsoft Excel [VIEW PROJECT](https://us.docworkspace.com/d/sIJyeupNZi_f6uAY)
+Microsoft Excel is a spreadsheet tool for data organization (cleaning and preparation), analysis, and visualization. It offers formulas, pivot tables, and charts, enabling users to manage and interpret data.
 
 **Data Cleaning and Preparation**: Processing the raw data to ensure it is ready for analysis. Steps taken:
 > Removing Duplicates: The initial rows of the data were 50001, but after removing duplicates, 9921 rows were left. No missing values were found; 
@@ -63,7 +64,7 @@ The following insights will be drawn:
 ![Total Sales by Region](https://github.com/user-attachments/assets/e21be676-1260-43d9-8733-0bd46bafbff7)
 
 **key Finding**
-Based on this analysis, the South Region has the highest sales followed by the East Region, while the West Region has the lowest sales. Though the business is doing well in all regions, the business should put more focus on the South Region which has a huge sales difference from others.
+Based on this analysis, the South Region has the highest sales, followed by the East Region, while the West Region has the lowest sales. Though the business is doing well in all regions, it should focus more on the South Region, which has a huge sales difference from others.
 
 2. **Product that was sold the most**;
 
@@ -99,7 +100,24 @@ In this analysis, lots of insights were generated. It answers the questions:
   * How many products were sold in Jan? **496**
   * What is the total No of products sold in 2024? **3,969**
     
-In Summary, the business focuses on a particular type of product and a particular region each month. There was only a change in the product type in August when the business initially sold shoes in 2023 but later changed to selling Hats in 2024.  
+In Summary, the business focuses on a particular type of product and a specific region each month. There was only a change in the product type in August when the business initially sold shoes in 2023 but later changed to selling Hats in 2024.  
   
 
+## SQL (STANDARD QUERY LANGUAGE)
+It is used for querying, storing and managing data in a database. The following queries: were derived in the analysis:
 
+1. Total sales for each Product Category:
+
+~~~ SQL
+SELECT Product, SUM(Quantity * UnitPrice) AS TotalSales
+FROM [dbo].[LITA Capstone Dataset]
+GROUP BY Product;
+~~~
+
+2. Find the number of sales transactions in each region.....
+
+~~~ SQL
+SELECT Region, count(quantity * UnitPrice) AS SalesCount
+from [dbo].[LITA Capstone Dataset]
+group by region
+~~~
