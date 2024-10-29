@@ -6,7 +6,7 @@
 [Key Features](ket-features)
 [Data Tools](data-tools)
 [Microsoft Excel](microsoft-excel)
-[Exploratory Data ](exploratory-data-analysis)
+[Exploratory Data Analysis ](exploratory-data-analysis)
 [Insights Derived](insights-derived)
 [SQL](SQL)
 [POWER BI](power-bi)
