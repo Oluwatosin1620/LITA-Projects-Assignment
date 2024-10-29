@@ -8,6 +8,7 @@ This is an analysis and visualization of sales data using Excel, SQL, and Power 
 ### Data Source
 Our facilitator provided this dataset
 
+
 ### Dataset Description
 This dataset contains various details of products sold in a store in a different geographical area. These types of datasets are studied to find out the patterns in the selling structure, profit earned from them, and order history. This data contains 9921 rows and 7 columns, while a missing key column was added in the cleaning process, making it a total of 8 columns.
 
@@ -59,7 +60,8 @@ The following insights will be drawn:
 
   ### Data Visualization
   **Pivot Table** a data summarization tool found in MS Excel was used for visualization.
-
+  
+**Insights Derived**:
 1. **Region with the highest Sales**:	
 
 ![Total Sales by Region](https://github.com/user-attachments/assets/e21be676-1260-43d9-8733-0bd46bafbff7)
@@ -118,6 +120,7 @@ In Summary, the business focuses on a particular type of product and a specific 
 ---
 It is used for querying, storing and managing data in a database. The following queries: were derived in the analysis:
 
+**Insights Derived**:
 1. Total sales for each Product Category:
 
 ~~~ SQL
