@@ -232,12 +232,11 @@ Our facilitator provided this dataset
 
 
 ### Dataset Description
-This dataset contains various details of products sold in a store in a different geographical area. These types of datasets are studied to find out the patterns in the selling structure, profit earned from them, and order history. This data contains 9921 rows and 7 columns, while a missing key column was added in the cleaning process, making it a total of 8 columns.
+This dataset contains various details of products sold in a store in a different geographical area. These types of datasets are studied to find patterns in the selling structure, profit earned from them, and order history. This data contains 9921 rows and 7 columns, while a missing key column was added in the cleaning process, making it a total of 8 columns.
 
 ---
 
 ### Key Features:
-**OrderID**: A unique identifier for each customer's order
 **CustomerID**: Each customer's unique ID
 **Product**: The name of the product ordered
 **Region**: The region in which the order was placed
@@ -343,79 +342,86 @@ In Summary, the business focuses on a particular type of product and a specific 
 It is used for querying, storing and managing data in a database. The following queries: were derived in the analysis:
 
 **Insights Derived**:
-1. Total sales for each Product Category:
+1. Retrieve the total number of customers from each region:
 
 ~~~ SQL
-SELECT Product, SUM(Quantity * UnitPrice) AS TotalSales
-FROM [dbo].[LITA Capstone Dataset]
-GROUP BY Product
-order by TotalSales desc
+SELECT region, count(customerID) as TotalCustomers
+from [dbo].[LITA Capstone Dataset12]
+Group by region
+order by TotalCustomers
 ~~~
 
-2. Find the number of sales transactions in each region:
+2. Find the most popular subscription type by the number of customers:
 
 ~~~ SQL
-SELECT Region, count(quantity * UnitPrice) AS SalesCount
-from [dbo].[LITA Capstone Dataset]
-group by region
+SELECT SubscriptionType, count(customerid) as MostPopular
+FROM [dbo].[LITA Capstone Dataset12]
+GROUP BY SubscriptionType
+ORDER BY MostPopular
 ~~~
 
-3. Find the highest-selling product by total sales value:
+3. Find customers who canceled their subscription within 6 months:
    
 ~~~ SQL
-SELECT Product, SUM(Quantity * UnitPrice) AS TotalSales
-FROM [dbo].[LITA Capstone Dataset]
-GROUP BY Product
-order by 2 desc
+select *,
+   DATEDIFF(month, SubscriptionStart, subscriptionend) as subscription_month
+from [dbo].[LITA Capstone Dataset11]
+where
+    canceled = 1
+    and DATEDIFF(month, subscriptionstart, subscriptionend) <= 6
+order by 
+    subscription_month;
 ~~~
 
-4. Calculate total revenue per product:
+4. Calculate the average subscription duration for all customers:
 
 ~~~ SQL
-SELECT Product, SUM(Quantity * UnitPrice) AS TotalRevenue
-FROM [dbo].[LITA Capstone Dataset]
-GROUP BY Product
+SELECT AVG(datediff(month, subscriptionstart, subscriptionend)) 
+ as Averagesubscription
+from [dbo].[LITA Capstone Dataset11]
 ~~~
 
-5. calculate monthly sales totals for the current year:
+5. Find customers with subscriptions longer than 12 months:
 
 ~~~ SQL
-SELECT 
-    MONTH(OrderDate) AS Month, SUM(Quantity * UnitPrice) AS MonthlySales
-FROM [dbo].[LITA Capstone Dataset]
-WHERE YEAR(OrderDate) = YEAR(GETDATE())
-GROUP BY  MONTH(OrderDate)
-ORDER BY Month;
+select *,
+    DATEDIFF(month, SubscriptionStart, subscriptionend) as subscription_month
+from [dbo].[LITA Capstone Dataset11]
+where
+    canceled = 1
+    and DATEDIFF(month, subscriptionstart, subscriptionend) >12 
+order by 
+    subscription_month;
 ~~~
 
-6. Find the top 5 customers by total purchase amount:
+6. Calculate total revenue by subscription type:
 
 ~~~ SQL
-SELECT Top 5 Customer_Id, SUM(Quantity * UnitPrice) AS TotalPurchase
-FROM [dbo].[LITA Capstone Dataset]
-GROUP BY Customer_Id
-ORDER BY TotalPurchase DESC
+SELECT SubscriptionType, sum(CAST(revenue AS INT)) as TotalRevenue
+from [dbo].[LITA Capstone Dataset11]
+group by subscriptiontype
+order by TotalRevenue
 ~~~
 
-7. Calculate the percentage of total sales contributed by each region:
+7. Find the top 3 regions by subscription cancellations:
 
 ~~~ SQL
-SELECT Region, sum(Quantity * UnitPrice) as TotalSales,
-(SUM(Quantity * UnitPrice) * 100.00 / (SELECT SUM(Quantity * UnitPrice) 
-from [dbo].[LITA Capstone Dataset] as PercentageOfTotalSales
-WHERE  PercentageOfTotalSales
+select top 3 region, count(*) as Total_cancel
+from [dbo].[LITA Capstone Dataset11]
+where canceled = 1
+group by region
+order by Total_Cancel desc
 ~~~
 
-8. Identify products with no sales in the last quarter:
+8. Find the total number of active and canceled subscriptions:
 
 ~~~ SQL
-SELECT Product
-FROM [dbo].[LITA Capstone Dataset]
-WHERE Product NOT IN (
-        SELECT DISTINCT Product
-        FROM [dbo].[LITA Capstone Dataset]
-        WHERE OrderDate >= DATEADD(QUARTER, -1, GETDATE())
-    );
+select case when canceled = 0 then 'Active_Sub'
+	else 'Canceled_Sub' end as Subscription_Status, 
+Canceled, count(*) as Total_cancel
+from [dbo].[LITA Capstone Dataset11]
+group by canceled
+order by Total_Cancel desc
 ~~~
 
 
