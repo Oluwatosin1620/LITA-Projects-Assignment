@@ -1,6 +1,6 @@
 # LITA-Projects-Assignment
 
-### Project Title: Sales Data
+## Project Title: Sales Data
 
 [Project Overview](project-overview)
 [Key Features](ket-features)
@@ -208,6 +208,13 @@ WHERE Product NOT IN (
 
 ## POWER BI
 A data Visualization and business intelligence tool for converting data from different sources to interactive dashboards.
+
+
+
+
+
+
+
 
 
 
