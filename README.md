@@ -238,11 +238,12 @@ This dataset contains various details of products sold in a store in a different
 
 ### Key Features:
 **CustomerID**: Each customer's unique ID
-**Product**: The name of the product ordered
+**CustomerName**: The name of each Customer
 **Region**: The region in which the order was placed
-**OrderDate**: The date the product was ordered
-**Quantity**: The quantity of the product ordered
-**UnitPrice**: The unit price for each product
+**SubscriptionType**: The type of Subscription 
+**SubscriptionStart**: The quantity of the product ordered
+**SubscriptionEnd**: The unit price for each product
+**Canceled**:
 **Revenue**: The revenue derived from the product sold
 
 
@@ -346,7 +347,7 @@ It is used for querying, storing and managing data in a database. The following 
 
 ~~~ SQL
 SELECT region, count(customerID) as TotalCustomers
-from [dbo].[LITA Capstone Dataset12]
+from [dbo].[LITA Capstone Dataset11]
 Group by region
 order by TotalCustomers
 ~~~
@@ -355,7 +356,7 @@ order by TotalCustomers
 
 ~~~ SQL
 SELECT SubscriptionType, count(customerid) as MostPopular
-FROM [dbo].[LITA Capstone Dataset12]
+FROM [dbo].[LITA Capstone Dataset11]
 GROUP BY SubscriptionType
 ORDER BY MostPopular
 ~~~
