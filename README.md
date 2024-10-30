@@ -135,7 +135,8 @@ It is used for querying, storing and managing data in a database. The following 
 ~~~ SQL
 SELECT Product, SUM(Quantity * UnitPrice) AS TotalSales
 FROM [dbo].[LITA Capstone Dataset]
-GROUP BY Product;
+GROUP BY Product
+order by TotalSales desc
 ~~~
 
 2. Find the number of sales transactions in each region:
