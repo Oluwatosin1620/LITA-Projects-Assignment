@@ -217,6 +217,14 @@ A data Visualization and business intelligence tool for converting data from dif
 ![SalesData Dashboard 2](https://github.com/user-attachments/assets/ccd93d50-0671-4eb0-9e18-45d2be583782)
 
 
+### INSIGHTS DRIVEN:
+
+This analysis provides a comprehensive view of a business’s sales data over the past two years, focusing on 9,921 customers and tracking product sales across various regions. 
+Initially, the dataset comprised 50,001 rows and 7 columns, covering customer details, product types, regions, order dates, quantity, and unit price. After removing duplicates, the data was refined to 9,921 unique records, with an additional column created to calculate total sales revenue.
+
+
+
+
 
 
 ## Project Title: Customer Data
