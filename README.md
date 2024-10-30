@@ -207,8 +207,14 @@ WHERE Product NOT IN (
 
 
 ## POWER BI
-A data Visualization and business intelligence tool for converting data from different sources to interactive dashboards.
+A data Visualization and business intelligence tool for converting data from different sources to interactive dashboards. The following are required to be presented on the visualization tool:
+1. Create a dashboard that visualises the Excel and SQL insights.
+2. The dashboard should include a sales overview, top-performing products, and regional breakdowns.
 
+
+![SalesData Dashboard](https://github.com/user-attachments/assets/65dc1381-99b4-43b4-a0c6-2c5f2cf85ab1)
+
+![SalesData Dashboard 2](https://github.com/user-attachments/assets/ccd93d50-0671-4eb0-9e18-45d2be583782)
 
 
 
