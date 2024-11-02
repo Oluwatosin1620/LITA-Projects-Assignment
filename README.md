@@ -212,6 +212,8 @@ A data Visualization and business intelligence tool for converting data from dif
 1. Create a dashboard that visualises the Excel and SQL insights.
 2. The dashboard should include a sales overview, top-performing products, and regional breakdowns.
 
+   The Excel file was loaded and transformed before visualization was performed, A conditional column was created to attain the Region Sort and Canceled range, while a calculated column was created to attain the Duration. 
+
 
 ![SalesData Dashboard](https://github.com/user-attachments/assets/65dc1381-99b4-43b4-a0c6-2c5f2cf85ab1)
 
@@ -455,7 +457,8 @@ order by Total_Cancel desc
 
 
 ## POWER BI
-A data Visualization and business intelligence tool for converting data from different sources to interactive dashboards.
+A data Visualization and business intelligence tool for converting data from different sources to interactive dashboards. The Excel file was loaded and transformed before visualization was performed, A calculated column was created to attain the Duration. 
+
 
 
 
