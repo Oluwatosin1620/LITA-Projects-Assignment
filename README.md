@@ -122,12 +122,13 @@ In this analysis, lots of insights were generated. It answers the questions:
   * How many products were sold in Jan? **496**
   * What is the total No of products sold in 2024? **3,969**
     
-In Summary, the business focuses on a particular type of product and a specific region each month. There was only a change in the product type in August when the business initially sold shoes in 2023 but later changed to selling Hats in 2024.  
+In Summary, the business focuses on a particular product type and region each month. There was only a change in the product type in August when the business initially sold shoes in 2023 but later changed to selling Hats in 2024.  
   
 
 ## SQL (STANDARD QUERY LANGUAGE)
 ---
-It is used for querying, storing and managing data in a database. The following queries: were derived in the analysis:
+It is used for querying, storing and managing data in a database. The data that had already been cleaned up from Excel was imported.
+The following queries were derived in the analysis:
 
 **Insights Derived**:
 1. Total sales for each Product Category:
