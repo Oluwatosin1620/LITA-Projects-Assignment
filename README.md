@@ -212,7 +212,7 @@ A data Visualization and business intelligence tool for converting data from dif
 1. Create a dashboard that visualises the Excel and SQL insights.
 2. The dashboard should include a sales overview, top-performing products, and regional breakdowns.
 
-   The cleaned Excel file was loaded and transformed before visualization was performed, A calculated column was created to attain the Total Sales/Revenue while a measure was calculated to attain the Average Revenue..
+   The cleaned Excel file was loaded and transformed before visualization was performed, A calculated column was created to attain the Total Sales/Revenue while a measure was calculated to attain the Average Revenue. The column quality, profile and distribution were checked before visualization was performed.
 
 ![SalesData Quality](https://github.com/user-attachments/assets/a15aef2c-f70f-49b2-b70b-c2daca44109b)
 
