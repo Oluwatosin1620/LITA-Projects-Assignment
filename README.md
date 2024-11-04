@@ -195,10 +195,17 @@ ORDER BY TotalPurchase DESC
 7. Calculate the percentage of total sales contributed by each region:
 
 ~~~ SQL
-SELECT Region, sum(Quantity * UnitPrice) as TotalSales,
-(SUM(Quantity * UnitPrice) * 100.00 / (SELECT SUM(Quantity * UnitPrice) 
-from [dbo].[LITA Capstone Dataset] as PercentageOfTotalSales
-WHERE  PercentageOfTotalSales
+SELECT 
+    Region,
+    sum(quantity * unitprice) as TotalSales,
+    sum(sum(quantity * unitprice)) OVER() as GrandTotal,
+    concat(ROUND(
+        (sum(quantity * unitprice) * 100) / sum(sum(quantity * unitprice)) over(),
+        2
+    ),'%') as PercentageOfTotal
+from [dbo].[LITA Capstone Dataset]
+group by Region
+order by TotalSales DESC;
 ~~~
 
 8. Identify products with no sales in the last quarter:
