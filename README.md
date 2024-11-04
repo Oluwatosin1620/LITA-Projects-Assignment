@@ -230,6 +230,8 @@ A data Visualization and business intelligence tool for converting data from dif
 
 ![SalesData Quality](https://github.com/user-attachments/assets/a15aef2c-f70f-49b2-b70b-c2daca44109b)
 
+### Data Visualization
+
 
 ![SalesData Dashboard](https://github.com/user-attachments/assets/65dc1381-99b4-43b4-a0c6-2c5f2cf85ab1)
 
