@@ -158,7 +158,7 @@ group by region
 3. Find the highest-selling product by total sales value:
    
 ~~~ SQL
-SELECT Product, SUM(Quantity * UnitPrice) AS TotalSales
+SELECT Top 1 Product, SUM(Quantity * UnitPrice) AS TotalSales
 FROM [dbo].[LITA Capstone Dataset]
 GROUP BY Product
 order by 2 desc
