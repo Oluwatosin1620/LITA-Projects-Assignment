@@ -1,4 +1,4 @@
-# LITA-Projects-Assignment
+# LITA-Capstone Projects
 
 ## Project Title: Sales Data
 
